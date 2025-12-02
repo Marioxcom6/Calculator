@@ -11,6 +11,9 @@ public class Calculator {
     public int divide(int a, int b) {
         return a / b;
     }
+    public int exponent(int a, int b) {
+        return (int) Math.pow(a, b);
+    }
     public static void main(String[] args) {
         Calculator calculator = new Calculator();
         System.out.println("Addition: " + calculator.add(10, 5));
@@ -21,5 +24,6 @@ public class Calculator {
         } catch (ArithmeticException e) {
             System.out.println("Divide: " + 0);
         }
+        System.out.println("Exponent: " + calculator.exponent(10,2));
     }
 }
